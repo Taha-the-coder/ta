@@ -135,10 +135,6 @@
     </footer>
 
     <script>
-        // Hide preloader once page is loaded
-        window.addEventListener('load', function () {
-            document.querySelector('.preloader').style.display = 'none';
-        });
 
         let slideIndex = 0;
         showSlides();
@@ -159,6 +155,11 @@
             dots[slideIndex - 1].className += " active";
             setTimeout(showSlides, 3000); // Change image every 3 seconds
         }
+
+        // Hide preloader once page is loaded
+        window.addEventListener('load', function () {
+            document.querySelector('.preloader').style.display = 'none';
+        });
     </script>
 </body>
 
